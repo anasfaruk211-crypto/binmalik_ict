@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admission - Binmalik</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+  <nav><h2>BINMALIK</h2><a href="/">Home</a><a href="/courses">Courses</a><a href="/admission">Admission</a><a href="/contact">Contact</a></nav>
+  <div class="main">
+    <h1>Admission Form</h1>
+    <form method="POST">
+      <input type="text" name="name" placeholder="Full Name" required><br><br>
+      <input type="text" name="phone" placeholder="Phone Number" required><br><br>
+      <select name="course" required>
+        <option>Computer Basics</option><option>Graphics Design</option><option>Web Development</option><option>Networking</option>
+      </select><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Binmalik Computer Training</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav><h2>BINMALIK</h2><a href="/">Home</a><a href="/courses">Courses</a><a href="/admission">Admission</a><a href="/contact">Contact</a></nav>
+  <div class="main">
+    <h1>Welcome to Binmalik Computer Training Centre</h1>
+    <p>We train: Computer Basics, Graphics Design, Web Development, Networking</p>
+    <a href="/admission"><button>Apply Now</button></a>
+  </div>
+</body>
+</html>

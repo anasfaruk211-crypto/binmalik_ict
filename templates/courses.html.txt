@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Courses - Binmalik</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+  <nav><h2>BINMALIK</h2><a href="/">Home</a><a href="/courses">Courses</a><a href="/admission">Admission</a><a href="/contact">Contact</a></nav>
+  <div class="main">
+    <h1>Our Courses</h1>
+    <ul>
+      <li>Computer Basics - N15,000</li>
+      <li>Graphics Design - N25,000</li>
+      <li>Web Development - N40,000</li>
+      <li>Networking - N30,000</li>
+    </ul>
+  </div>
+</body>
+</html>

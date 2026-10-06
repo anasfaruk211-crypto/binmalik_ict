@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin - Binmalik</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+  <nav><h2>BINMALIK</h2><a href="/">Home</a><a href="/courses">Courses</a><a href="/admission">Admission</a><a href="/contact">Contact</a></nav>
+  <div class="main">
+    <h1>Registered Students</h1>
+    {% for s in students %}
+      <p>{{ s.name }} - {{ s.phone }} - {{ s.course }}</p>
+    {% else %}
+      <p>No student yet</p>
+    {% endfor %}
+  </div>
+</body>
+</html>

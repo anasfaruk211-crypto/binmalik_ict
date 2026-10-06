@@ -1,0 +1,11 @@
+
+<!DOCTYPE html><html><head><meta name='viewport' content='width=device-width,initial-scale=1'><link rel='stylesheet' href='/static/style.css'></head><body>
+<nav><h2>BINMALIK ICT - ADMIN</h2><div><a href='/'>Home</a><a href='/admin'>Refresh</a></div></nav>
+<div class='container'><h1>Students List ({{students|length}})</h1><br>
+<div class='cards'>
+{% for s in students %}
+<div class='card'><h3>{{s.name}}</h3><p>📞 {{s.phone}}<br>📚 {{s.course}}</p></div>
+{% else %}
+<div class='card'><p>No admission yet</p></div>
+{% endfor %}
+</div></div></body></html>
